@@ -1,0 +1,165 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    font-family: Microsoft YaHei;
+    margin:0;
+    padding:0;
+}
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background: url("../img/bac.jpg");
+    margin:0 auto;
+    height:100%;
+}
+
+div.header{
+    position: relative;
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.header span{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+
+div.header a{
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+div.header .space{
+    background: url("../img/space.jpg") no-repeat left;
+}
+
+div.header img{
+    width: 100%;
+    height: auto;
+}
+
+div.wrap{
+    width: 1256px;
+    margin: 0 auto;
+
+}
+
+div.span2{
+    background:url("../img/banner-bg.png");
+    background-size:100% ;
+    margin-top: 15px;
+}
+
+.span2  ul{
+    display: block;
+    margin: 10px auto 45px;
+    padding: 10px 10px;
+    width: 105px;
+    border-top:2px solid #62605e;
+    border-bottom: 2px solid #62605e;
+}
+
+.span2  ul li{
+    display: block;
+    list-style: none;
+    margin: 0 auto 10px;
+}
+
+
+a.large-black,a.large-blue,a.small-black,a.small-blue{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.large-black:hover,.large-blue:hover,.small-black:hover,.small-blue:hover{
+    color:#ffffff;
+}
+
+a.large-blue,a.large-black{
+    color: #ffffff;
+    display: block;
+    height: 31px;
+    width: 105px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+a.large-blue,a.small-blue{
+    background: #88acd9;
+}
+
+a.large-black{
+    background: #434343;
+}
+
+a.small-blue,a.small-black{
+    color: #ffffff;
+    display: block;
+    height: 25px;
+    width: 89px;
+    line-height: 1.8em;
+}
+
+a.small-black{
+    background: #898989;
+}
+
+.person-table{
+    border: 0 ;
+    width: 100% !important;
+    line-height: 3em;
+    margin: 0 !important;
+}
+
+td.person-title{
+    width: 10%;
+}
+
+/*td.person-content{
+    width: 50%;
+}*/
+
+.person-form,.person-table{
+    padding: 40px 0 0 70px;
+}
+.person-form p{
+    display: inline-block;
+    width: 100px;
+}
+
+.person-form span{
+    display: block;
+    margin-top: 25px;
+}
+
+.person-form button{
+    display: block;
+    height: 30px;
+    width: 91px;
+    background: url("../img/blue-button.png") no-repeat center;
+    border: 0;
+    color: #fff;
+    font-family: Microsoft YaHei;
+    letter-spacing: 22px;
+    text-align: right;
+    margin-top: 25px;
+    margin-left: 180px;
+}
+.per_padding_style{
+   padding-top: 33px;
+}
+

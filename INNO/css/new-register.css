@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("../img/register_body.jpg") no-repeat;
+}
+/* placeholder ÑÕÉ«*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #white;
+}
+/*end*/
+.wrap{
+    margin: 0 auto;
+    width: 1366px;
+    height: 768px;
+    background: url("../img/register_bg.jpg") no-repeat;
+}
+.wrap form{
+    width: 316px;
+    height: 310px;
+    margin: 0px 0px 0px 539px;
+    position: relative;
+    top: 281px;
+}
+.wrap form input{
+    width: 245px;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #919496;
+    border-radius:10px;
+    color:white;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.stuId{
+    background: url("../img/stu_bg.png") no-repeat left;
+}
+.id{
+    background: url("../img/id_bg.png") no-repeat left;
+}
+.email{
+    background: url("../img/email_bg.png") no-repeat left;
+}
+.password{
+    background: url("../img/password_bg.png") no-repeat left;
+}
+.submit{
+    padding: 13px 125px 17px 125px;
+    cursor: pointer;
+    color:white;
+    background: url("../img/btn_register.png") no-repeat ;
+    text-decoration: none;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+.submit_p button{
+    border:0;
+}
+label.error{
+    float: right;
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 7px;
+    background: url("../img/1443043559_Delete.png") no-repeat;
+}

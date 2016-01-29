@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geek</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+</head>
+<style>
+    span.badge{
+        visibility: hidden;
+    }
+    div.col-lg-4 p a.btn{
+        margin-top: 65%;
+        margin-left: 50%;
+    }
+</style>
+<body>
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">Geek</a>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <button class="btn btn-primary" type="button"  style="margin-top: 20px">
+        当前在线人数 <span class="badge">num</span>
+    </button>
+    <div class="jumbotron online" style="margin-top:20px" ms-repeat="mess" ms-controller="online">
+        <div class="row">
+            <div class="col-xs-4">
+                <img ms-attr-src="{{el.path}}" class="img-responsive img-circle">
+            </div>
+            <div class="col-xs-4">
+                <dl>
+                    <dt>姓名</dt>
+                    <dd>{{el.name}}</dd>
+                </dl>
+                <dl>
+                    <dt>手机</dt>
+                    <dd>有种请打{{el.phone}}</dd>
+                </dl>
+                <dl>
+                    <dt>QQ</dt>
+                    <dd>不吹不黑{{el.qq}}</dd>
+                </dl>
+                <dl>
+                    <dt>方向</dt>
+                    <dd>{{el.direction}}</dd>
+                </dl>
+            </div>
+            <div class="col-lg-4">
+                <p><a class="btn btn-primary btn-lg" href="detail.html" role="button">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-group" style="width:100%">
+        <button type="button" class="btn btn-primary" style="width:90%">不知在何处的小伙伴</button>
+        <button type="button" class="btn btn-primary dropdowntoggle" data-toggle="dropdown" aria-haspopup="true" style="width:10%" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div style="width: 100%;padding-top:20px;display: none" class="offdown">
+            <div class="jumbotron offline" style="margin-top:20px" ms-repeat="text" ms-controller="offline">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img ms-attr-src="{{el.path}}" class="img-responsive img-circle">
+                    </div>
+                    <div class="col-xs-4">
+                        <dl>
+                            <dt>姓名</dt>
+                            <dd>{{el.name}}</dd>
+                        </dl>
+                        <dl>
+                            <dt>手机</dt>
+                            <dd>有种请打{{el.phone}}</dd>
+                        </dl>
+                        <dl>
+                            <dt>QQ</dt>
+                            <dd>不吹不黑{{el.qq}}</dd>
+                        </dl>
+                        <dl>
+                            <dt>方向</dt>
+                            <dd>{{el.direction}}</dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-4">
+                        <p><a class="btn btn-primary btn-lg" href="detail.html" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/avalon.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        avalon.define({
+            $id:"online",
+            mess:[
+                {
+                    id:1,
+                    path:"img/2.jpg",
+                    name:"叶良辰",
+                    phone:110,
+                    qq:120,
+                    direction:"前端"
+                },
+                {
+                    id:2,
+                    path:"img/3.jpg",
+                    name:"赵日天",
+                    phone:119,
+                    qq:114,
+                    direction:"前端"
+                },{
+                    id:2,
+                    path:"img/3.jpg",
+                    name:"赵日天",
+                    phone:119,
+                    qq:114,
+                    direction:"前端"
+                }
+            ]
+        } );
+        avalon.define({
+            $id:"offline",
+            text:[
+                {
+                    id:1,
+                    path:"img/2.jpg",
+                    name:"叶良辰",
+                    phone:110,
+                    qq:120,
+                    direction:"前端"
+                },
+                {
+                    id:2,
+                    path:"img/3.jpg",
+                    name:"赵日天",
+                    phone:119,
+                    qq:114,
+                    direction:"前端"
+                }
+            ]
+        } );
+        avalon.scan();
+    </script>
+    <script>
+        var num = $("div.online").length;
+        $(".badge").text(num).css("visibility","visible");
+        $(".dropdowntoggle").click(function(){
+            $(".offdown").fadeToggle();
+        });
+    </script>
+</body>
+</html>

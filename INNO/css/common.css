@@ -1,0 +1,164 @@
+
+div.padding_style{
+    padding: 24px 0px 0px 74px;
+}
+
+.padding_style p{
+    font-size: 20px;
+}
+
+.table-bordered{
+    border: 1px dashed #88cb99 ;
+    border-radius: 10px !important;
+}
+th,td{
+    text-align: center !important;
+}
+
+.th1{
+    width: 50%;
+}
+
+.th2{
+    width: 10%;
+}
+
+.th3{
+    width: 40%;
+}
+h3 span{
+    color: #ababab;
+    font-size: 20px;
+}
+.table span{
+    padding: 1px;
+    background: #5ac1df;
+    border-radius: 4px;
+    color: white;
+    margin: auto 5px;
+}
+
+/*招新规则*/
+.rule{
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    background:url("../img/line.png") no-repeat bottom left;
+}
+.rule span{
+    display: inline-block;
+    margin-left: 20px;
+    color: #b6b6b6;
+    font-size: 18px;
+}
+.rule_body p{
+    font-size: 18px;
+}
+.rule_body span{
+    color: red;
+}
+.rule_body_last{
+    width: 85px;
+    display: inline-block;
+    color: black !important;
+}
+.span10{
+    width: 1010px !important;
+    height: 592px !important;
+    margin-top: 15px;
+    background: url("../img/right_body_bg.png") no-repeat;
+}
+/*table*/
+table{
+    margin-top:27px;
+    margin-left: 44px;
+    display:block;
+    width:750px !important;
+    border:3px solid #eeeeee;
+    border-bottom: none !important;
+    border-radius:10px;
+    font-size: 18px;
+    table-layout:fixed;
+}
+table tr.trsing{
+    border-bottom:2px solid #fff;
+    width:750px;
+    background-color:#eeeeee;
+}
+table tr.trdual{
+    border-bottom:2px solid #fff;
+    width:750px;
+    background-color:#a7cee0;
+}
+table tr:last-child{
+    border-bottom: none;
+}
+table tr td.td-left{
+    border-right:2px solid #fff;
+    width:315px;
+    height:35px;
+
+}
+table tr td.td-mid{
+    border-right:2px solid #fff;
+    width:170px;
+    height:35px;
+
+}
+table tr td.td-right{
+    width:270px;
+    height:35px;
+
+}
+.table span{
+    padding: 4px;
+    background: #5ac1df;
+    border-radius: 4px;
+    color: white;
+    margin: auto 5px;
+}
+td{
+    text-align: center !important;
+    vertical: center;
+}
+.table th, .table td{
+    line-height: 48px !important;
+    padding: 5px !important;
+}
+/*主页的样式*/
+.index_body{
+    padding: 200px 0px 0px 200px;
+}
+.index_body p{
+    font-size: 50px;
+    font-weight: 500;
+    color: #004a84;
+    font-family: Microsoft YaHei;
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+}
+/*答题信息CSS*/
+.queInfo_table{
+    width: 1000px !important;
+    margin-left: -43px !important;
+}
+.queInfo_table .td-left{
+    width: 378px;
+}
+.queInfo_table .td-mid{
+    width: 178px;
+}
+.queInfo_table .td-right{
+    width: 241px;
+}
+.queInfo_table .td-right-right{
+    width: 171px;
+}
+/*footer*/
+div.footer{
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    position:relative;
+    bottom:0px;
+}

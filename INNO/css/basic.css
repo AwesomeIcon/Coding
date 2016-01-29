@@ -1,0 +1,93 @@
+div.span10{
+	position:relative;
+	min-height:677px !important;
+	float:left;
+}
+p.queIntro{
+	display:block;
+	background-image:url('../img/greenline.png');
+	background-position:0 28px;
+	background-repeat:no-repeat;
+	font-size:20px;
+	padding-bottom:12px;
+}
+div.queArea,div.queSelect{
+	background-image:url('../img/shortgreenline.png');
+	background-repeat:no-repeat;
+	background-position:94% 99%;
+}
+p.queName{
+	padding:8px;
+	font-size:19px;
+	font-weight:normal !important;
+	display:block;
+	line-height:35px;
+	min-height:35px;
+	background-image:url('../img/shortgreenline.png');
+	background-repeat:no-repeat;
+	background-position:left 40px;
+}
+p.queName span{
+	width:35px;
+	height:35px;
+	font-size: 10px;
+}
+p.queSpec{
+	font-size:17px;
+	display:block;
+	line-height:35px;
+	font-weight:normal !important;
+	min-height:150px;
+}
+p.queScore,p.queScore span{
+	font-size:17px;
+}
+p.queComment{
+	font-size:17px;
+	display:block;
+	line-height:35px;
+	font-weight:normal !important;
+	min-height:100px;
+}
+div.upSub{
+	position:absolute;
+	right:6%;
+	margin-top:10px;
+}
+.nav li{
+	width:91px;
+	height:30px;
+	margin-top: -21px;
+}
+.nav li.submit{
+	margin-left:26px;
+}
+div.upSub .nav li a,li.submit input{
+	color:#fff;
+	font-size:16px;
+	background-image:url("../img/bluebutton.png");
+	border-radius: 10px;
+}
+
+div.upSub .nav li input {
+	position: relative;
+	z-index: 10;
+	left: 10px;
+	opacity: 0;
+	width: 80px;
+	cursor: pointer;
+}
+
+div.upSub .nav li.submit input{
+	opacity: 1;
+	border: 0;
+	font-family: "Microsoft YaHei";
+	height: 31px;
+	width: 90px;
+	top: 2px;
+}
+
+.upload-btn{
+	position: relative;
+	top: -30px;
+}

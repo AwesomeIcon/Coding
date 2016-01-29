@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WB</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+</head>
+<style>
+    span.badge{
+        visibility: hidden;
+    }
+    div.col-lg-4 p a.btn{
+        margin-top: 65%;
+        margin-left: 50%;
+    }
+</style>
+<body>
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">WB</a>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <button class="btn btn-primary" type="button"  style="margin-top: 20px">
+        当前文章数 <span class="badge">num</span>
+    </button>
+    <p class="text-right">
+        <a class="btn btn-primary" id="add" data-toggle="modal" data-target="#myModal" role="button" style="margin-top: -58px">Add</a>
+    </p>
+    <div class="jumbotron online" style="margin-top:20px" ms-repeat="mess" ms-controller="online">
+        <div class="row" ms-attr-value="{{el.id}}">
+            <div>
+                <p class="text-center lead">{{el.title}}</p>
+                <p class="text-right">
+                    <small>作者 ： {{el.author}}</small>
+                </p>
+                <p>{{el.text}}</p>
+                <p class="text-right">
+                    <button class="del btn" type="button" onclick="del(this)">Delete</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">New Article</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Title:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-author" class="control-label">Author:</label>
+                        <input type="text" class="form-control" id="recipient-author">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Article:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/avalon.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    var m = avalon.define({
+        $id:"online",
+        mess:[
+
+        ]
+    } );
+    var temp = [];
+    $.getJSON("data.json",function(data){
+        $.each(data.body,function(i,item){
+            temp[i] = item.article;
+        });
+        m.mess = temp;
+        var num = temp.length;
+        $(".badge").text(num).css("visibility","visible");
+    });
+    avalon.scan();
+    function del(obj){
+        obj.parentNode.parentNode.parentNode.parentNode.remove();
+        var value = obj.parentNode.parentNode.parentNode.getAttribute("value");
+        $.ajax({
+            type:"POST",
+            url:"",
+            contentType:"application/json",
+            data:JSON.stringify({
+                id:value
+            }),
+            success:function(){
+                window.location.href = "index.html";
+            },
+            error:function(xhr){
+                alert("Error "+xhr.status);
+            }
+        })
+    }
+    $("#save").click(function(){
+        $.ajax({
+            type:"POST",
+            url:"",
+            contentType:"application/json",
+            data:JSON.stringify({
+                title:$("#recipient-name").val(),
+                author:$("#recipient-author").val(),
+                text:$("#message-text").val()
+            }),
+            success:function(){
+                window.location.href = "index.html";
+            },
+            error:function(xhr){
+                alert("Error "+xhr.status);
+            }
+        })
+    })
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "status":1,
+    "body": [
+        {
+            "id": 1,
+            "user": null,
+            "article": {
+                "id": 1,
+                "title": "first",
+                "author": "test",
+                "text": "just a test"
+            }
+        },
+        {
+            "id": 3,
+            "user": null,
+            "article": {
+                "id": 3,
+                "title": "three",
+                "author": "33",
+                "text": "3333333"
+            }
+        }
+    ]
+}

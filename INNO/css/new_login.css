@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("../img/body_bg.jpg") no-repeat;
+}
+/* placeholder ÑÕÉ«*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #white;
+}
+/*end*/
+.wrap{
+    margin: 0 auto;
+    width: 1366px;
+    height: 768px;
+    background: url("../img/login_bg.jpg") no-repeat;
+}
+.wrap form{
+    width: 330px;
+    height: 160px;
+    margin: 0px 0px 0px 528px;
+    position: relative;
+    top: 480px;
+}
+.wrap p{
+    color: white;
+    font-size: 19px;
+}
+.wrap p span{
+    letter-spacing: 10px;
+    width:100px ;
+}
+.wrap input{
+    width: 230px;
+    height: 28px;
+    font-size: 16px;
+    padding-left: 4px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.wrap a,.wrap button{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 11px 18px;
+    background: url("../img/btn_login.png") no-repeat;
+}
+.login{
+    background: url("../img/btn_login.png") no-repeat;
+    margin: 7px 13px 0 58px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+.wrap .register{
+    margin: 7px 13px 0 58px;
+    background: url("../img/btn_rs.png") no-repeat;
+}
+label.error{
+    float: right;
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 7px;
+    background: url("../img/1443043559_Delete.png") no-repeat;
+}
