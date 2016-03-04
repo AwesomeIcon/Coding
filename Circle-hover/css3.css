@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-03-28 15:32:52
+ * @version $Id$
+ */
+
+a{
+	text-decoration: none;
+}
+
+.one{
+	height: 250px;
+	width: 250px;
+	margin: 50px 0 0 100px;
+	float: left;
+
+}
+
+.img{
+	background: url(images/IMG_7776.JPG) center ;
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border-width: 10px;
+	position: absolute;
+	z-index: -1;
+}
+
+
+.text h3{
+	color: #fff;
+	font-size: 25px;
+	width: 150px;
+	height: 50px;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.text p{
+	color: #fff;
+	font-style: italic;
+	border-top: 1px solid white;
+	width: 200px;
+	text-align: center;
+	margin-top: 40px;
+	margin-left: 15px;
+	font-size: 15px;
+}
+
+.bor{
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	border: solid  10px ;
+	border-color: #ecab18 #1ad280  #1ad280 #ecab18;
+	float: left;
+	z-index: 1;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+.bac{
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: 0;
+	background-color: #000;
+    -webkit-transition: all 1s ease-in-out;
+    top: 69px;
+    left: 119px;
+    position: absolute;
+}
+
+.one a:hover .bor{
+	-webkit-transform:rotate(180deg);
+	-webkit-transition-duration:1s;
+}
+
+.one a:hover .bac{
+    opacity: .6;
+    -webkit-transition-duration:1s;
+}
+
+.two{
+	height: 250px;
+	width: 250px;
+	margin: 50px 0 0 200px;
+	float: left;
+
+}
+
+.bian{
+	border-radius: 50%;
+	border: 20px solid #fff;
+	height: 210px;
+	width: 210px;
+	float: left;
+	z-index: 1;
+	opacity: .5;
+}
+
+.img1{
+	background: url(images/IMG_1717.JPG) top ;
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transition:all .8s ease-in-out;
+}
+
+.two a:hover .img1{
+	-webkit-transform:rotate(-90deg);
+	-webkit-transition-duration:.8s;
+}
+
+.bac1{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: 0;
+	background-color: #000;
+    -webkit-transition: all .8s ease-in-out;
+    position: absolute;
+    top: 59px;
+    left: 300px;
+}
+
+.two a:hover .bac1{
+	opacity: .6;
+
+    -webkit-transform:translateX(260px);
+}
+
+.text1 h3{
+	color: #fff;
+	font-size: 27px;
+	width: 150px;
+	height: 50px;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: 50px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.text1 p{
+	color: #fff;
+	font-style: italic;
+	border-top: 1px solid white;
+	width: 220px;
+	text-align: center;
+	font-size: 17px;
+	margin-left: 15px;
+}
+
+.three{
+	height: 250px;
+	width: 250px;
+	margin: 50px 0 0 200px;
+	float: left;
+}
+
+.bac2{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: -5;
+	background-color: #2B2B2B;
+    -webkit-transition: all .8s ease-in-out;
+    position: absolute;
+    top: 59px;
+    left: 580px;
+}
+
+.img2{
+	background: url(images/IMG_1739.JPG) center ;
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transition:all .8s ease-in-out;
+}
+
+.three a:hover .img2{
+	-webkit-transform:scale(.4) translateX(120%);
+}
+
+.bian2{
+	border-radius: 50%;
+	border: 20px solid #fff;
+	height: 210px;
+	width: 210px;
+	float: left;
+	z-index: 1;
+	opacity: .5;
+}
+
+a:hover .bac2{
+	opacity: 1;
+    -webkit-transition-duration:.8s;
+    -webkit-transform:translateX(430px);
+}
+
+.four{
+	height: 250px;
+	width: 250px;
+	margin: 50px 0 0 100px;
+	float: left;
+}
+
+.img3{
+	background: url(images/IMG_7776.JPG) center ;
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border-width: 10px;
+	-webkit-transition:all .3s ease-in-out;
+}
+
+.bian3{
+	border-radius: 50%;
+	border: 20px solid #fff;
+	height: 210px;
+	width: 210px;
+	float: left;
+	z-index: 1;
+	opacity: .5;
+}
+
+.bac3{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: -5;
+	background-color: #2B2B2B;
+    -webkit-transition: all .3s ease-in-out;
+    position: absolute;
+    top: 359px;
+    left: 400px;
+}
+
+.four a:hover .img3{
+	-webkit-transform:translateX(-291px);
+	opacity: 0;
+}
+
+.four a:hover .bac3{
+	-webkit-transform:translateX(-291px);
+	opacity: 1;
+
+}
+
+.five{
+	height: 250px;
+	width: 250px;
+	margin: 50px 0 0 200px;
+	float: left;
+}
+
+.img4{
+	background: url(images/IMG_1717.JPG) top ;
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border-width: 10px;
+}
+
+.bian4{
+	border-radius: 50%;
+	border: 20px solid #fff;
+	height: 210px;
+	width: 210px;
+	float: left;
+	z-index: 1;
+	opacity: .5;
+}
+
+.bac4{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	opacity: 0;
+	z-index: 2;
+	background-color: #2B2B2B;
+    -webkit-transition: all .8s ease-in-out;
+    position: absolute;
+    top: 359px;
+    left: 559px;
+    -webkit-transform-style: preserve-3d;
+}
+
+.five a:hover .bac4{
+	opacity: .8;
+	-webkit-transform: rotate3d(0, 1, 0, 360deg);
+}
