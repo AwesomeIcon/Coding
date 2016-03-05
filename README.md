@@ -1,5 +1,11 @@
 # Coding For Fun
 
-## CountDown
+Enjoy yourself!
 
-![countdown](https://mmbiz.qlogo.cn/mmbiz/RnfzGlXVQn1kSCAGiatNp4MMtmavfDXfmF6NbILX1TE4jqssxpsFzvOmZgSjVUicubc8dUqtdvjWzoic86KVbdk2w/0?wx_fmt=gif)
+### Screen Shot
+
+* Countdown
+![countdown](https://github.com/AwesomeIcon/Coding/tree/master/CountDown/countdown.gif)
+
+* Circle-hover
+![circle-hover](https://github.com/AwesomeIcon/Coding/tree/master/Circle-hover/circle-hover.gif)
