@@ -6,12 +6,12 @@ Enjoy yourself!
 
 * Countdown
 
-![countdown](https://github.com/AwesomeIcon/Coding/blob/master/CountDown/countdown.gif)
+![countdown](./CountDown/countdown.gif)
 
 * Circle-hover
 
-![circle-hover](https://github.com/AwesomeIcon/Coding/blob/master/Circle-hover/circle-hover.gif)
+![circle-hover](./Circle-hover/circle-hover.gif)
 
 * Login
 
-![login](https://github.com/AwesomeIcon/Coding/blob/master/Login/login.png)
+![login](./Login/login.png)
